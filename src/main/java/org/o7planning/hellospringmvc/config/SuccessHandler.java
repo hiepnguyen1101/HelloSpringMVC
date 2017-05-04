@@ -36,8 +36,7 @@ public class SuccessHandler implements AuthenticationSuccessHandler {
 			/*logger.debug("Response has already been committed. Unable to redirect to "
 					+ targetUrl);*/
 			return;
-		}
-
+		}	
 		redirectStrategy.sendRedirect(request, response, targetUrl);
 	}
 
